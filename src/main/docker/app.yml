@@ -1,0 +1,13 @@
+version: '2'
+services:
+    tea-app:
+        image: test-case
+        environment:
+             #- SPRING_JPA_DATABASE-PLATFORM=org.hibernate.dialect.MySQL8Dialect
+             - SPRING_DATASOURCE_URL=jdbc:mysql://localhost:33062/mydb
+             - SPRING_DATASOURCE_USERNAME=mkyong
+             - SPRING_DATASOURCE_PASSWORD=password      
+        ports:
+            - 8080:8080
+
+   
